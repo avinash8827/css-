@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS Selector</title>
+            <style>
+                div{
+                    width: 200px;
+                    height: 200px;
+                    background-color:orange;
+                }
+               
+                span#a1{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background:violet;
+                }
+               
+                span.b1{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: purple;
+                }
+              
+                a[href="https://google.in"]{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: lavender;
+                }
+                
+                *{
+                    border:10px solid #000;
+                }
+               
+                div,span#a1,span.b1,a[href="https://facebook.in"]{
+                    display: inline-block;
+                }
+                
+                
+                h1::after{
+                    content: url('https://webstockreview.net/images/clipart-smile-smile-gif-2.gif');
+                }
+               
+                div#c1:hover{
+                background: green; 
+                }
+            </style>
+        </head>
+        <body>
+            <div>CSS Element Selector </div>
+            <span id="a1">CSS Id Selector.  #</span>
+            <span class="b1">CSS Class Selector</span>
+            <a href="https://google.in">CSS Attribute Selector </a>
+            <h1>CSS Pesudo Element Selector ::</h1>
+            <div id="c1">CSS Pesudo Class Selector :</div>
+        </body>
+    </html>
